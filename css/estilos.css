@@ -304,6 +304,7 @@
     }
     .navbar1 li{
         width: 100%;
+        border-bottom: 1px solid #fff;
     }
     .navbar1 li ul{
         position: relative;
