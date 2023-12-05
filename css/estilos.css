@@ -1,0 +1,348 @@
+:root{
+    scroll-behavior: smooth;
+    transition: scroll-behavior .1s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.icon{
+    height: 30px;
+    background-color: #191966;;
+}
+.icon__container{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+.icon_menu{
+    display: inherit;
+    gap: 5px;
+    align-items: center;
+}.icon_menu span{
+    color: #fff;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+.nav1{
+    height: 75px;
+    background-color: rgb(34,54,136);
+
+}
+.nav1__title{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.nav1__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1__logo{
+    display: inherit;
+    align-items: inherit;
+}
+.navbar1{
+    list-style: none;
+    
+}
+.navbar1 li{
+    position: relative;
+    float: left;
+}
+.navbar1 li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    
+}
+.navbar1 li a:hover{
+    color: rgb(20, 232, 20);
+}
+.navbar1 li ul{
+    position: absolute;
+    left: 0;
+    width: 150px;
+    background-color: rgb(34,54,136);
+    display: none;
+    z-index: 2;
+}
+.navbar1 li ul li{
+    width: 100%;
+    border-top: 1px solid #fff;
+
+}
+.navbar1 li ul li ul{
+    left: -150px;
+    top: 0;
+
+}
+.navbar1 li:focus-within > ul,
+.navbar1 li:hover > ul{
+    display: initial;
+}
+
+#menu-bar, .menu-icon{
+    display: none;
+}
+.nav1__container label{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+/*----------*/
+.cni-img{
+    height: calc(80vh - 75px);
+    object-fit: cover;
+    filter: brightness(.6);
+}
+.hero{
+    border-top: .7rem solid white;
+    border-bottom: .7rem solid white;
+}
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.buttons i {
+    text-decoration: none;
+    font-size: 1rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(0,128,0);
+    border-radius: 50%;
+}
+.hero-description{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .4rem;
+
+}
+.description__button{
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(0,128,0);
+    padding: 10px 20px;
+    border-radius: 30px 30px;
+}
+.description__button:hover{
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(10, 122, 10);
+    color: #fff;
+}
+.hero-text{
+    text-align: start;
+}
+.hero-text p{
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+.hero-text h2{
+    font-size: 2.3em;
+}
+
+
+
+.modal__matricula{
+    display: flex;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 40vh;
+    right: 0;
+    z-index: 1;
+    transition: .8s;
+}
+.btn__matricula{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color: #008000;
+    font-weight: 900;
+    color: #fff;
+    padding: 10px;
+}
+.btn__matricula:hover{
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(10, 122, 10);
+    color: #fff;
+}
+.modal__body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.btn__modal{
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-weight: 900;
+    
+}
+.btn__modal:hover{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.modal__matricula1{
+    margin-right: -200px;
+}
+
+
+
+.description{
+    width: 100%;
+    background-color: rgb(34,54,136);
+}
+.description__container{
+    padding: 50px 0px;
+    
+}
+.description__container{
+    width: 90%;
+    max-width: 80em;
+    margin: 0 auto;
+}
+.description__title{
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.description__title::before, .description__title::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    display: block;
+}
+.description__title{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.description__paragraph{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+.hero_img{
+    width: 500px;
+}
+.description__text{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+@media(max-width: 920px){
+    .contenedor{
+        width: 100%;
+    }
+    .icon{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .nav1__container{
+        padding: 20px;
+    }
+    .nav1__container label{
+        display: initial;
+    }
+    .nav1__menu{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background-color: rgb(34,54,136);
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        z-index: 20;
+        text-align: center;
+
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 1s;
+    }
+    .spred{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .navbar1 li{
+        width: 100%;
+    }
+    .navbar1 li ul{
+        position: relative;
+        width: 100%;
+    }
+    .navbar1 li ul li{
+        background-color: rgb(34,54,136);
+    }
+    .navbar1 li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    .modal__matricula{
+        bottom: 60vh;
+        z-index: 10;
+    }
+    .hero-description{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .hero{
+        border-top: .5rem solid white;
+        border-bottom: .5rem solid white;
+    }
+    .hero_img{
+        width: 20rem;
+        
+    }
+    .description__paragraph{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    .description__section{
+        text-align: center;
+    }
+    .description__text{
+        flex-wrap: wrap-reverse;
+    }
+    .description__title{
+        gap: 1rem;
+    }
+}
